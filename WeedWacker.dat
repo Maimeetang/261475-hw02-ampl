@@ -1,0 +1,52 @@
+set trimmers := 
+    electric_inHouse
+    gas_inHouse
+    electric_outsource
+    gas_outsource
+;
+
+set electric_trimmer :=
+    electric_inHouse
+    electric_outsource
+;
+
+set gas_trimmer :=
+    gas_inHouse
+    gas_outsource
+;
+
+
+param electric_demand   = 30000;
+param gas_demand        = 15000;
+
+param production_avil   = 10000;
+param assembly_avil     = 15000;
+param packaging_avil    = 5000;
+
+param price :=
+    electric_inHouse    55
+    gas_inHouse         82
+    electric_outsource  67
+    gas_outsource       95
+;
+
+param production_use :=
+    electric_inHouse    0.2
+    gas_inHouse         0.4
+    electric_outsource  0
+    gas_outsource       0
+;
+
+param assembly_use :=
+    electric_inHouse    0.3
+    gas_inHouse         0.5
+    electric_outsource  0
+    gas_outsource       0
+;
+
+param packaging_use :=
+    electric_inHouse    0.1
+    gas_inHouse         0.1
+    electric_outsource  0
+    gas_outsource       0
+;

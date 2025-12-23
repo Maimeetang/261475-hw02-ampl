@@ -1,0 +1,7 @@
+reset;
+model WeedWacker.mod;
+data WeedWacker.dat;
+option solver cplex;
+solve;
+display x;
+display total_cost;
